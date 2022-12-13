@@ -1,0 +1,447 @@
+@font-face {
+  font-family: "Kaushan Script 400";
+  src: url("fonts/kaushan/KaushanScript-Regular.eot");
+  src: local("Kaushan Script"), local("KaushanScript-Regular"), url("fonts/kaushan/KaushanScript-Regular.eot") format("eot"), url("fonts/kaushan/KaushanScript-Regular.woff2") format("woff2"), url("fonts/kaushan/KaushanScript-Regular.woff") format("woff"), url("fonts/kaushan/KaushanScript-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat 700";
+  src: url("fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/Montserrat/Montserrat-Bold.eot") format("eot"), url("fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway 900";
+  src: url("fonts/rale/Raleway-Black.eot");
+  src: local("Raleway Black"), local("Raleway-Black"), url("fonts/rale/Raleway-Black.eot") format("eot"), url("fonts/rale/Raleway-Black.woff2") format("woff2"), url("fonts/rale/Raleway-Black.woff") format("woff"), url("fonts/rale/Raleway-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway 700";
+  src: url("fonts/rale/Raleway-Bold.eot");
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("fonts/rale/Raleway-Bold.eot") format("eot"), url("fonts/rale/Raleway-Bold.woff2") format("woff2"), url("fonts/rale/Raleway-Bold.woff") format("woff"), url("fonts/rale/Raleway-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway 600";
+  src: url("fonts/rale/Raleway-SemiBold.eot");
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("fonts/rale/Raleway-SemiBold.eot") format("eot"), url("fonts/rale/Raleway-SemiBold.woff2") format("woff2"), url("fonts/rale/Raleway-SemiBold.woff") format("woff"), url("fonts/rale/Raleway-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway 500";
+  src: url("fonts/rale/Raleway-Medium.eot");
+  src: local("Raleway Medium"), local("Raleway-Medium"), url("fonts/rale/Raleway-Medium.eot") format("eot"), url("fonts/rale/Raleway-Medium.woff2") format("woff2"), url("fonts/rale/Raleway-Medium.woff") format("woff"), url("fonts/rale/Raleway-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway 400";
+  src: url("fonts/rale/Raleway-Regular.eot");
+  src: local("Raleway"), local("Raleway-Regular"), url("fonts/rale/Raleway-Regular.eot") format("eot"), url("fonts/rale/Raleway-Regular.woff2") format("woff2"), url("fonts/rale/Raleway-Regular.woff") format("woff"), url("fonts/rale/Raleway-Regular.ttf") format("ttff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2d3033;
+}
+
+.start_page {
+  color: #fff;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(pic/intro.svg);
+  width: 100%;
+  height: 1024px;
+}
+.start_page header {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "a b";
+  font-family: "Raleway 600";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  font-style: normal;
+}
+.start_page header .logo {
+  align-self: center;
+  justify-self: center;
+  grid-area: "a";
+}
+.start_page header .user {
+  grid-area: "b";
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "c d";
+}
+.start_page header .user nav {
+  grid-area: "c";
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.start_page header .user .login {
+  grid-area: "d";
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.start_page .intro {
+  width: 100%;
+  height: 924px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.start_page .intro h3 {
+  font-family: "Kaushan Script 400";
+  font-size: 64px;
+  line-height: 93px;
+  font-weight: 400;
+  font-style: normal;
+}
+.start_page .intro h1 {
+  text-align: center;
+  width: 60%;
+  font-family: "Montserrat 700";
+  font-size: 144px;
+  line-height: 176px;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+.start_page .intro h1:after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 0;
+  border: 1px solid #fff;
+  background: #fff;
+  top: 400px;
+  left: 38%;
+}
+.start_page .intro button {
+  color: #fff;
+  width: 370px;
+  height: 80px;
+  box-sizing: border-box;
+  font-family: "Raleway 700";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-style: normal;
+  background: transparent;
+  border: 4px solid #ffffff;
+  text-transform: uppercase;
+}
+.start_page .intro .navigation {
+  font-family: "Raleway 700";
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  height: 85px;
+  gap: 30px;
+}
+.start_page .intro .navigation div {
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  border-top: 4px solid #f9efcf;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.start_page .intro .navigation div span {
+  font-family: "Raleway 500";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  font-style: normal;
+  color: #f9efcf;
+}
+
+h3 {
+  font-family: "Kaushan Script 400";
+  font-size: 30px;
+  line-height: 43px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about {
+  height: 924px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .inf {
+  width: 70%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+.about .inf h1 {
+  text-transform: uppercase;
+  font-family: "Raleway 900";
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+}
+.about .inf h1:after {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  content: "";
+  width: 170px;
+  height: 0;
+  background: #f38281;
+  border: 2px solid #f38281;
+}
+.about .inf p {
+  align-self: end;
+  text-align: center;
+  font-family: "Raleway 400";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+}
+.about .blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  align-self: start;
+  gap: 10px;
+}
+.about .blocks .block_shadow {
+  background: url("pic/about/img3.svg");
+  box-shadow: 5px 5px #95e1d3;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+.about .blocks .block_shadow img {
+  align-self: end;
+  width: initial;
+}
+.about .blocks .block_shadow p {
+  align-self: start;
+  color: #fff;
+  font-family: "Raleway 500";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  font-style: normal;
+}
+.about .blocks div {
+  width: 100%;
+  height: 100%;
+  height: 338px;
+}
+.about .blocks div img {
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  background: #95e1d3;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.wrap .line {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.wrap .line div {
+  width: 100%;
+  height: 100%;
+  border: solid #fff;
+  border-width: 0 1px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+.wrap .line div p {
+  align-self: end;
+  font-family: "Raleway 700";
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+}
+.wrap .line div span {
+  font-family: "Raleway 500";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.worck {
+  width: 100%;
+  height: 820px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 1fr 5fr;
+  justify-content: space-around;
+}
+.worck h3 {
+  align-self: end;
+}
+.worck h1 {
+  text-transform: uppercase;
+  font-family: "Raleway 900";
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+}
+.worck h1:after {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  content: "";
+  width: 170px;
+  height: 0;
+  background: #f38281;
+  border: 2px solid #f38281;
+}
+.worck .spheres {
+  width: 100%;
+  height: 85%;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.worck .spheres div {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  gap: 40px;
+}
+.worck .spheres div img {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.worck .spheres div h2 {
+  display: flex;
+  align-items: center;
+  height: 45%;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-transform: uppercase;
+  font-family: "Raleway 700";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-style: normal;
+}
+.worck .spheres div p {
+  font-family: "Raleway 400";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: end;
+}
+
+.design {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 870px;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(pic/bgdes.svg);
+}
+.design h3 {
+  align-self: end;
+}
+.design h1 {
+  text-transform: uppercase;
+  font-family: "Raleway 900";
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+}
+.design h1:after {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  content: "";
+  width: 170px;
+  height: 0;
+  background: #f38281;
+  border: 2px solid #f38281;
+}
+.design img {
+  align-self: end;
+  width: 90%;
+  position: relative;
+}
+.design img::after {
+  content: "";
+  background: url("pic/about/img1.svg");
+  width: 200px;
+  height: 415px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.service {
+  width: 100%;
+  height: 990px;
+}/*# sourceMappingURL=style.css.map */
